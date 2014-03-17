@@ -1,0 +1,33 @@
+.heart {
+  font-size: 200pt;
+  line-height: 0.9;
+  text-align: center;
+  color: red;
+  -webkit-animation:beat 0.6s infinite; /* Chrome, Safari, Opera */
+  -moz-animation:beat 0.6s infinite;
+  animation:beat 0.6s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes beat
+{
+  0%   {font-size:200pt;}
+  7%   {font-size:190pt;}
+  21%  {font-size:200pt;}
+  35%  {font-size:280pt;}
+  60%  {font-size:220pt;}
+  65%  {font-size:225pt;}
+  100% {font-size:200pt;}
+}
+
+/* Standard syntax */
+@keyframes beat
+{
+  0%   {font-size:200pt;}
+  7%   {font-size:190pt;}
+  21%  {font-size:200pt;}
+  35%  {font-size:280pt;}
+  60%  {font-size:220pt;}
+  65%  {font-size:225pt;}
+  100% {font-size:200pt;}
+}
